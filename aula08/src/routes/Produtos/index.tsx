@@ -1,4 +1,6 @@
 import { listaProdutos } from "../../listaProdutos";
+import { Link } from "react-router-dom";
+import { FaCartPlus } from "react-icons/fa";
 
 export default function Produtos() {
   //MUDANDO O TÍTULO DA PÁGINA!!!
@@ -34,7 +36,9 @@ export default function Produtos() {
                 />
               </td>
               <td>
-                <button>Editar</button>
+                <Link to={`/editar/produto/${produto.id}`}>
+                  <FaCartPlus />
+                </Link>
               </td>
             </tr>
           ))}
