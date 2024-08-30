@@ -36,7 +36,7 @@ export default function Produtos() {
                 />
               </td>
               <td>
-                <Link to={`/editar/produto/${produto.id}`}>
+                <Link to={`/editar/produtos/${produto.id}`}>
                   <FaCartPlus />
                 </Link>
               </td>
