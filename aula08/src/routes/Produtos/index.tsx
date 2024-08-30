@@ -1,6 +1,53 @@
 import { listaProdutos } from "../../listaProdutos";
 import { Link } from "react-router-dom";
 import { FaCartPlus } from "react-icons/fa";
+import styled from "styled-components";
+
+const MinhaTabela = styled.table`
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px 0;
+  font-size: 1.2rem;
+  text-align: center;
+
+  & thead {
+    background-color: #333;
+    color: white;
+
+    & th {
+      padding: 10px;
+      border: 1px solid #f1f1f1;
+    }
+  }
+
+  & tbody {
+    & tr {
+      background-color: white;
+
+      &:nth-child(even) {
+        background-color: #f1f1f1;
+      }
+
+      & td {
+        padding: 10px;
+        border: 1px solid #f1f1f1;
+      }
+    }
+  }
+
+  & tfoot {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+
+    & td {
+      padding: 10px;
+      border: 1px solid #f1f1f1;
+    }
+  }
+`;
 
 export default function Produtos() {
   //MUDANDO O TÍTULO DA PÁGINA!!!
@@ -10,7 +57,7 @@ export default function Produtos() {
     <div>
       <h1>Produtos Eletrônicos</h1>
 
-      <table>
+      <MinhaTabela>
         <thead>
           <tr>
             <th>Nome</th>
@@ -50,7 +97,7 @@ export default function Produtos() {
             </td>
           </tr>
         </tfoot>
-      </table>
+      </MinhaTabela>
     </div>
   );
 }
