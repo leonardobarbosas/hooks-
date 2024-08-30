@@ -17,7 +17,6 @@ export default function EditarProdutos() {
   const [produto, setProduto] = useState<Lista>();
 
   useEffect(() => {
-    //Aqui é onde iremos realizar a requisição para a API, para recuperar os dados do produto que queremos editar
     setProduto(listaProdutos.find((item) => item.id === Number(id)));
   }, [id]);
 

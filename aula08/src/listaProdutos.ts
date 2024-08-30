@@ -7,7 +7,7 @@ export const listaProdutos: Lista[] = [
     preco: 40.45,
     qtd: 10,
     descricao: "Mouse óptico",
-    imagem: "mouse.jpg",
+    imagem: "/img/mouse.jpg",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const listaProdutos: Lista[] = [
     preco: 489.0,
     qtd: 5,
     descricao: "Teclado Gamer",
-    imagem: "teclado.jpg",
+    imagem: "/img/teclado.jpg",
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ export const listaProdutos: Lista[] = [
     preco: 2895,
     qtd: 3,
     descricao: "Monitor 32''",
-    imagem: "monitor.jpg",
+    imagem: "/img/monitor.jpg",
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ export const listaProdutos: Lista[] = [
     preco: 2589,
     qtd: 6,
     descricao: "Cadeira Gamer",
-    imagem: "cadeira.jpg",
+    imagem: "/img/cadeira.jpg",
   },
   {
     id: 5,
@@ -39,6 +39,6 @@ export const listaProdutos: Lista[] = [
     preco: 75.0,
     qtd: 32,
     descricao: "Mouse pad temática",
-    imagem: "mouse-pad.jpg",
+    imagem: "/img/mouse-pad.jpg",
   },
 ];
